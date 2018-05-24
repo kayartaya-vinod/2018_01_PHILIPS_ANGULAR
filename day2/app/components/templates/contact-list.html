@@ -1,0 +1,23 @@
+<input type="text" class="form-control" 
+    name="keyword" [(ngModel)]="keyword">
+
+<div class="list-group">
+
+    <contact-card class="list-group-item"
+        *ngFor="let c1 of (contacts | filter: keyword)"
+        style="cursor: pointer; "
+        (click) = "slideUp()"
+        [routerLink] = "['/view', c1.id]"
+        
+        [contact] = "c1" ></contact-card>
+
+</div>
+
+<!-- [contact]="c1" is a one-way data binding from parent component to child component -->
+
+<!-- 
+
+    @Input()
+    contact: Contact = new Contact();
+
+ -->

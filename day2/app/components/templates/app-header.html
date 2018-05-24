@@ -1,0 +1,12 @@
+<!-- .navbar.navbar-default.navbar-fixed-top>.container>.navbar-header>a.navbar-brand -->
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a href="#" class="navbar-brand">AddressBook App</a>
+        </div>
+        <div class="navbar-right navbar-form">
+                <span>There are {{contactsCount}} contacts</span>
+                <button [routerLink]="['/add']" class="btn btn-info">Add new contact</button>
+        </div>
+    </div>
+</div>

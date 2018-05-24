@@ -1,0 +1,17 @@
+<div class="row">
+    <div class="col-sm-4">
+        <img src="https://vinod.co/randomdata/images/{{ contact.gender=='Male' ? 'men': 'women'}}/{{contact.id}}.jpg"
+            style="height: 80px;"
+            class="img img-circle">
+    </div>
+    <div class="col-sm-8">
+        <div>
+            {{ contact.gender | title }}
+            {{ contact.first_name | uppercase }}
+            {{ contact.last_name | uppercase }}
+        </div>
+        <br>
+        <div>{{ contact.email }}</div>
+        <div>{{ contact.phone }}</div>
+    </div>
+</div>
